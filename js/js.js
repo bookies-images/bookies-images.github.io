@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   var folder = "img/26.01/";
 
-  $.ajax({
+  $.get({
     url: folder,
     success: function(data) {
       $(data).find("a").attr("href", function(i, val) {
