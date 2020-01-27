@@ -16,15 +16,15 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 
 
-  var folder = "img/26.01//";
+  var folder = "img/26.01/";
 
   $.ajax({
     url: folder,
     success: function(data) {
       $(data).find("a").attr("href", function(i, val) {
         if (val.match(/\.(jpe?g|png|gif)$/)) {
-          $("body").append("<img src='" + folder + val + "'>");
-          // console.log(folder + val);
+          $("body").append("<img src='" + val + "'>");
+          console.log(val);
         }
       });
     }
