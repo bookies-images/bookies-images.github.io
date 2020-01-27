@@ -16,10 +16,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 
 
-  var folder = "img/26.01/";
-
   $.get({
-    url: folder,
+    url: "https://bookies-images.github.io/img/26.01/",
     success: function(data) {
       $(data).find("a").attr("href", function(i, val) {
         if (val.match(/\.(jpe?g|png|gif)$/)) {
