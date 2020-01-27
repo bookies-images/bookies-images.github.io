@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         // var filename = this.href.replace(window.location.host, "").replace("http://", "http://127.0.0.1:5500");
         // var filename = this.href.replace(window.location.host, "").replace("http://", "https://bookies-images.github.io");
         var filename = $(this).attr("href");
-        console.log(filename);
+        console.log("https://bookies-images.github.io" + filename);
 
         // $("#fileNames").append("<li>" + '<a href="' + filename + '">' + filename + '</a>' + "</li>");
       });
