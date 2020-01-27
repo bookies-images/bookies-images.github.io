@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 
 
-  $.get({
+  $.ajax({
     url: "https://bookies-images.github.io/img/26.01/",
     success: function(data) {
       $(data).find("a").attr("href", function(i, val) {
